@@ -4,10 +4,14 @@
 
 To train the model, use the command:
 
-    python NBtrain.py -f training_foldername
+    python NBtrain.py -f training_folder
 
-To test the model, use the command:
+The "training_folder" should contain a folder named "spam" and a folder named "ham".  See folder "data1" for an example.
 
-    python NBtest.py -f testing_foldername [-p spam_prior]
+To test the model with testing folder, use the command:
+
+    python NBtest.py -f testing_folder [-p spam_prior]
+    
+The "testing_folder" should be of the same structure as the "training_folder".
 
 ## Dataset
