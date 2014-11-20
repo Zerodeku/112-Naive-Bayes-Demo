@@ -22,6 +22,10 @@ To test in an interactive mode:
 
 data1 and data2 were downloaded from http://www.csmining.org/index.php/enron-spam-datasets.html.  More datasets could be found in the given website. 
 
+## Weight Files
+
+Initial "spamWords.json" and "hamWords.json" were trained on data1.
+
 ## Disclaimer
 
 This code is written for demo purpose only.  It has not been thoroughly tested.
