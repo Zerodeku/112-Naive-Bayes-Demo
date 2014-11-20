@@ -54,7 +54,7 @@ def main():
 	spamCount = len(filter(lambda fname: fname.endswith('.txt'), os.listdir(spamDir)))
 	totalCount = float(hamCount + spamCount)
 	print 'hamPrior:%f' % (hamCount/totalCount)
-	print 'spamPrior:%f' % (spamCount/totalCount)
+	print 'spamPrior:%f\n' % (spamCount/totalCount)
 
 	# learning conditional likelihood for each word
 	hamWordProb = learnProb(hamDir)
@@ -62,8 +62,10 @@ def main():
 
 	print "TopHamWordProb:"
 	print sorted(hamWordProb.items(), key=(lambda (k, v): v), reverse = True)[:30]
+	print "\n"
 	print "TopSpamWordProb:"
 	print sorted(spamWordProb.items(), key=(lambda (k, v): v), reverse = True)[:30]
+	print "\n"
 
 	hamJPath = '%s/../hamWords.json' %dataDir
 	spamJPath = '%s/../spamWords.json' %dataDir
