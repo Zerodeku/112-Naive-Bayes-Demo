@@ -2,4 +2,7 @@
 
 ## Run Code
 
+To train the model, use the command:
+'python NBtrain.py -f foldername'
+
 ## Dataset
