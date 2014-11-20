@@ -20,8 +20,8 @@ To test in an interactive mode:
     
 ## Dataset
 
-
+data1 and data2 were downloaded from http://www.csmining.org/index.php/enron-spam-datasets.html.  More datasets could be found in the given website. 
 
 ## Disclaimer
 
-This code is written for demo purpose only.  It hasn't been thoroughly tested.
+This code is written for demo purpose only.  It has not been thoroughly tested.
